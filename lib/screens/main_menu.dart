@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'four_squares.dart';
-
 
 class MyStatefulWidget extends StatefulWidget {
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'four_squares.dart';
+import 'color_list.dart';
 
 class MyStatefulWidget extends StatefulWidget {
 
@@ -25,7 +26,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
              context, MaterialPageRoute(builder: (context) => GridViewWidget()));},
           ),
           _MainScreenButton(name: 'Цветной список',
-            onTap: (){},
+            onTap: (){
+             Navigator.push(
+             context, MaterialPageRoute(builder: (context) => ColorListWidget()));},
           ),
           _MainScreenButton(name: 'Асинхронный запрос',
             onTap: (){},

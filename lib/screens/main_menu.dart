@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'four_squares.dart';
 import 'color_list.dart';
+import 'json_screen.dart';
 
 class MyStatefulWidget extends StatefulWidget {
 
@@ -31,7 +32,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
              context, MaterialPageRoute(builder: (context) => ColorListWidget()));},
           ),
           _MainScreenButton(name: 'Асинхронный запрос',
-            onTap: (){},
+            onTap: (){Navigator.push(
+                context, MaterialPageRoute(builder: (context) => JsonScreenPage()));},
           ),
           _MainScreenButton(name: 'Codelab',
             onTap: (){},
@@ -55,7 +57,6 @@ class _MainScreenButton extends StatelessWidget {
 
   final ButtonStyle style =
   ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-
 
   @override
   Widget build(BuildContext context) {

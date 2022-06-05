@@ -26,24 +26,17 @@ class _ColorListWidgetState extends State<ColorListWidget> {
         },
         separatorBuilder: (context, idx) {
           return Divider();
-
         },
-
       ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-
           });
-          // Add your onPressed code here!
         },
         backgroundColor: Colors.blue,
         child: const Icon(Icons.brush),
       ),
-
-
     );
   }
-
 }

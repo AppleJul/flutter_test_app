@@ -27,9 +27,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-
           });
-          // Add your onPressed code here!
         },
         backgroundColor: Colors.blue,
         child: const Icon(Icons.brush),
@@ -42,7 +40,6 @@ class _ChangeColor extends StatelessWidget {
   _ChangeColor({
     Key? key,
   }) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
